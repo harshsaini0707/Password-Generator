@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="Password_Generator.css">
+</head>
+<body>
+    <div>
+        <h1>Password Generator</h1>
+        <main>
+            <div id="generator">
+                
+                <label id="Password">
+                    <input type="text" id="password" placeholder="Generate A Password"/>
+                    <button id="copy" > <i class="fa-regular fa-copy" alt="copy"></i></button>
+                </label>
+                
+                <label>
+                    <div id="ps">Password Length:</divSS>
+                        <input type="number" id="length" value="8">
+                    </label>
+                    
+                    <label>
+                        <span>Include Uppercase Letters:</span>
+                        <input type="checkbox" id="uppercase"  checked/>
+                    </label>
+                    
+                    <label>
+                        <div>
+                            <span>Include Lowercase Letters:</span>
+                            <input type="checkbox" id="lowercase"  checked/>
+                        </div>
+                    </label>
+                    
+                    <label>
+                        <span>Include Numbers:</span>
+                        <input type="checkbox" id="number"  checked/>
+                    </label>
+                    <label>
+                        <div>
+                            <span>Include Symbols:</span>
+                            <input type="checkbox" id="symbols"  checked/>
+                        </div>
+                    </label>
+                </div>
+                <button id="generate"type="submit">Generate Password</button>
+            </main>
+            <div id="made">Made With   <span style="color: red; font-size:30px;">&#10084;</span> By Harsh Saini</div>
+                </div>
+            <script src="Password_Generator.js"></script>
+        </body>
+</html>
